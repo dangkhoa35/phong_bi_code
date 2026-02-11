@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Anh Yêu Em</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+  <!-- Background trái tim -->
+  <div class="hearts"></div>
+
+  <!-- Phong bì -->
+  <div class="envelope" onclick="openEnvelope()">
+      <div class="flap"></div>
+      <div class="letter">
+          <p id="loveText">Anh yêu em ❤️</p>
+      </div>
+  </div>
+
+  <!-- QR Code -->
+  <div class="qr-section">
+      <h3>Quét mã QR để mở phong bì 💗</h3>
+      <div id="qrcode"></div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
