@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>QR Love</title>
+
+<script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.6.0/lib/qr-code-styling.js"></script>
+
+<style>
+body {
+    background: #e6eef5;
+    text-align: center;
+    font-family: Arial;
+}
+
+.date {
+    margin-top: 20px;
+    color: #c44;
+    font-size: 18px;
+}
+
+.names {
+    margin-top: 20px;
+    color: #c44;
+    font-size: 20px;
+}
+
+#canvas {
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="date">11.02.2026</div>
+
+<div id="canvas"></div>
+
+<div class="names">Đăng Khoa & Hiểu Phương</div>
+
+<script>
+
+const qrCode = new QRCodeStyling({
+    width: 300,
+    height: 300,
+    data: "https://github.com/dangkhoa35/phong_bi_code.git",
+    dotsOptions: {
+        color: "#c44",
+        type: "rounded"
+    },
+    backgroundOptions: {
+        color: "#e6eef5"
+    },
+    cornersSquareOptions: {
+        type: "extra-rounded",
+        color: "#c44"
+    },
+    shape: "circle"
+});
+
+qrCode.append(document.getElementById("canvas"));
+
+</script>
+
+</body>
+</html>

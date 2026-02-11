@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffb6c1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Trái tim bay */
+.hearts::before {
+  content: "❤️ 💕 💖 💗 💓 💞";
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  animation: float 5s linear infinite;
+}
+
+@keyframes float {
+  0% { top: 100%; }
+  100% { top: -10%; }
+}
+
+/* Phong bì */
+.envelope {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  background: #ff69b4;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.flap {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 60px solid #ff1493;
+  top: -60px;
+}
+
+.letter {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 18px;
+  color: #ff1493;
+}
+
+/* QR */
+.qr-section {
+  margin-top: 40px;
+}
